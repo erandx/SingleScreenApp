@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:src="@drawable/kz_home" />
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/galada"
+            android:gravity="center"
+            android:text="KZ Design"
+            android:textColor="#2F4F4F"
+            android:textSize="28dp"
+            app:fontFamily="@font/galada" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/galada"
+            android:gravity="center_horizontal"
+            android:text="Everything we desing is about you. We have an open minded approach which helps in defining what first needs to be done, and how it should be implemented." />
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/description"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/galada"
+            android:gravity="center_horizontal"
+            android:text="Info"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:fontFamily="@font/calligraffitti" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info"
+            android:layout_marginTop="8dp"
+            android:autoLink="phone"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:text="617-777-0824"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="8dp"
+            android:autoLink="web"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:text="www.kzdesign.us"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/website"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="14 Sun Valley Dr Framingham, MA 01701"
+            android:textColor="@android:color/black"
+            android:autoLink="map"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="Hours: Monday to Friday 8:00AM - 5PM"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hours"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_contact"
+            android:onClick="SendEmail"
+            android:text="Contact us" />
+    </RelativeLayout>
+
+
+</ScrollView>
