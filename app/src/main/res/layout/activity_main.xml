@@ -25,7 +25,7 @@
             android:gravity="center"
             android:text="KZ Design"
             android:textColor="#2F4F4F"
-            android:textSize="28dp"
+            android:textSize="28sp"
             app:fontFamily="@font/galada" />
 
         <TextView
@@ -33,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/image"
+            android:textSize="16sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
@@ -51,7 +52,7 @@
             android:gravity="center_horizontal"
             android:text="Info"
             android:textColor="@android:color/black"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="italic"
             app:fontFamily="@font/calligraffitti" />
 
@@ -66,7 +67,7 @@
             android:gravity="center_horizontal"
             android:text="617-777-0824"
             android:textColor="@android:color/black"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/website"
@@ -79,7 +80,7 @@
             android:gravity="center_horizontal"
             android:text="www.kzdesign.us"
             android:textColor="@android:color/black"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/address"
@@ -91,7 +92,7 @@
             android:text="14 Sun Valley Dr Framingham, MA 01701"
             android:textColor="@android:color/black"
             android:autoLink="map"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/hours"
@@ -100,6 +101,7 @@
             android:layout_below="@id/address"
             android:layout_marginTop="8dp"
             android:gravity="center_horizontal"
+            android:textSize="14sp"
             android:text="Hours: Monday to Friday 8:00AM - 5PM"
             android:textColor="@android:color/black" />
 
@@ -110,6 +112,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_margin="8dp"
+            android:textSize="14sp"
             android:background="@drawable/button_contact"
             android:onClick="SendEmail"
             android:text="Contact us" />

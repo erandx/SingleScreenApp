@@ -18,14 +18,13 @@ public class MainActivity extends AppCompatActivity {
     /*
     * This code sends an Intent to contact the Business
      */
-    String subject = "New House";
-    String message = "Your message";
+    String subject = "";
+    String message = "";
     public void SendEmail(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
                 "mailto", "erandX@gmail.com", null));
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, message);
         startActivity(Intent.createChooser(intent, "Choose an Email client :"));
-        ;
     }
 }
